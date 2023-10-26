@@ -59,7 +59,7 @@ private:
     QVector<double> procesData;
     QVector<double> mins, maxs;
 
-    GraphCP* graphCP;
+    GraphCP* graphCP = nullptr;
     QVector<double> xValue, yValue;
 };
 #endif // MAINWINDOW_H

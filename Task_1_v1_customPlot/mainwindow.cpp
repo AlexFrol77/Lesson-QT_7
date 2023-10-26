@@ -251,5 +251,8 @@ void MainWindow::on_pb_start_clicked()
 
 void MainWindow::makeGraph(QVector<double> xValue, QVector<double> yValue)
 {
+    if (graphCP != nullptr) {
+        delete graphCP;
+    }
     graphCP = new GraphCP(xValue, yValue);
 }
